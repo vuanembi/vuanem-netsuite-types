@@ -1,7 +1,4 @@
-type Lazada = 789;
-type Shopee = 787;
-type Tiki = 788;
-
-type Location = Lazada | Shopee | Tiki;
-
-export default Location;
+export type Lazada = 789;
+export type Shopee = 787;
+export type Tiki = 788;
+export type Location = Lazada | Shopee | Tiki;

@@ -1,6 +1,7 @@
-import Location from './location';
+/* eslint-disable camelcase */
+import * as Location from './location';
 import Custbody5 from './custbody5';
-import OrderPaymentMethod from './orderPaymentMethod';
+import * as OrderPaymentMethod from './orderPaymentMethod';
 import LeadSource from './leadSource';
 import CustbodyExpectedShippingMethod from './custbodyExpectedShippingMethod';
 import CustbodyExpectedDeliveryTime from './custbodyExpectedDeliveryTime';
@@ -18,9 +19,9 @@ type Subsidiary = 1;
 
 export type SalesOrderSearch = {
   id: number;
-}
+};
 
-export type SalesOrder = {
+export type SalesOrderRecord = {
   // * Customer Information
   entity: number;
   custbody_customer_phone: string;
@@ -37,7 +38,7 @@ export type SalesOrder = {
   };
 
   // * Order Infomartion
-  custbody_order_payment_method: OrderPaymentMethod;
+  custbody_order_payment_method: OrderPaymentMethod.OrderPaymentMethod;
   trandate: ISODate;
   salesrep: Employee;
   leadsource: LeadSource;
@@ -46,21 +47,17 @@ export type SalesOrder = {
 
   // * Store Information
   subsidiary: Subsidiary;
-  location: Location;
+  location: Location.Location;
 
   // * Items
-  item: [
-    {
-      item: number;
-      quantity: number;
-    },
-  ];
+  item: {
+    item: number;
+    quantity: number;
+  }[];
 
   // * Promotions
-  promotions: [
-    {
-      promocode: number;
-      couponcode: string;
-    },
-  ];
+  // promotions: {
+  //   promocode: number;
+  //   couponcode: string;
+  // }[];
 };
