@@ -1,11 +1,11 @@
-import Location from 'vuanem-netsuite-types/location';
-import Custbody5 from 'vuanem-netsuite-types/custbody5';
-import OrderPaymentMethod from 'vuanem-netsuite-types/orderPaymentMethod';
-import LeadSource from 'vuanem-netsuite-types/leadSource';
-import CustbodyExpectedShippingMethod from 'vuanem-netsuite-types/custbodyExpectedShippingMethod';
-import CustbodyExpectedDeliveryTime from 'vuanem-netsuite-types/custbodyExpectedDeliveryTime';
-import Employee from 'vuanem-netsuite-types/employee';
-import Partner from 'vuanem-netsuite-types/partner';
+import Location from './location';
+import Custbody5 from './custbody5';
+import OrderPaymentMethod from './orderPaymentMethod';
+import LeadSource from './leadSource';
+import CustbodyExpectedShippingMethod from './custbodyExpectedShippingMethod';
+import CustbodyExpectedDeliveryTime from './custbodyExpectedDeliveryTime';
+import Employee from './employee';
+import Partner from './partner';
 
 // YYYY-MM-DD
 type ISODate = string;

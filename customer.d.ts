@@ -1,5 +1,5 @@
-import LeadSource from 'vuanem-netsuite-types/leadSource';
-import Employee from 'vuanem-netsuite-types/employee';
+import LeadSource from './leadSource';
+import Employee from './employee';
 
 export type CustomerSearch = {
   phone: string;
