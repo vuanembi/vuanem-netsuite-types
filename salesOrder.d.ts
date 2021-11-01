@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 import Location from './location';
 import Custbody5 from './custbody5';
 import OrderPaymentMethod from './orderPaymentMethod';
@@ -20,7 +22,7 @@ export type SalesOrderSearch = {
   id: number;
 }
 
-export type SalesOrder = {
+export type SalesOrderRecord = {
   // * Customer Information
   entity: number;
   custbody_customer_phone: string;
