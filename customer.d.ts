@@ -13,3 +13,7 @@ export type CustomerRecord = {
   lastname: string;
   phone: string;
 };
+
+export type CustomerSearchResult = {
+  id: string,
+}
