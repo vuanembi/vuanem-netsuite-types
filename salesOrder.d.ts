@@ -44,6 +44,7 @@ export type SalesOrderRecord = {
   leadsource: LeadSource;
   custbody5: Custbody5;
   partner: Partner;
+  memo: string;
 
   // * Store Information
   subsidiary: Subsidiary;
