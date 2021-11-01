@@ -61,3 +61,5 @@ export type SalesOrderRecord = {
   //   couponcode: string;
   // }[];
 };
+
+export type SalesOrderRes = number;

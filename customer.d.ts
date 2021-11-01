@@ -4,7 +4,7 @@ import Employee from './employee';
 
 export type CustomerSearch = {
   phone: string;
-}
+};
 
 export type CustomerRecord = {
   leadsource: LeadSource;
@@ -12,4 +12,13 @@ export type CustomerRecord = {
   firstname: string;
   lastname: string;
   phone: string;
+};
+
+export type CustomerRes = {
+  id: string;
+  recordType: 'customer';
+  values: {
+    entityId: string;
+    phone: string;
+  };
 };
