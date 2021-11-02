@@ -2,7 +2,7 @@
 import LeadSource from './leadSource';
 import Employee from './employee';
 
-export type CustomerSearch = {
+export type CustomerSearchReq = {
   phone: string;
 };
 
@@ -16,13 +16,13 @@ export type CustomerRecord = {
 
 export type CustomerRes = {
   id: string;
-  recordType: 'customer';
-  values: {
-    entityId: string;
+  fields: {
+    firstname: string;
+    lastname: string;
     phone: string;
   };
 };
 
-export type CustomerSearchResult = {
-  id: string,
-}
+export type CustomerSearchRes = {
+  id: string;
+};
