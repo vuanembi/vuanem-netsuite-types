@@ -1,12 +1,13 @@
 /* eslint-disable camelcase */
-import * as Location from './location';
-import Custbody5 from './custbody5';
-import * as OrderPaymentMethod from './orderPaymentMethod';
-import LeadSource from './leadSource';
-import CustbodyExpectedShippingMethod from './custbodyExpectedShippingMethod';
-import CustbodyExpectedDeliveryTime from './custbodyExpectedDeliveryTime';
-import Employee from './employee';
-import Partner from './partner';
+import type * as Location from './location';
+import type Custbody5 from './custbody5';
+import type * as OrderPaymentMethod from './orderPaymentMethod';
+import type LeadSource from './leadSource';
+import type CustbodyExpectedShippingMethod from './custbodyExpectedShippingMethod';
+import type CustbodyExpectedDeliveryTime from './custbodyExpectedDeliveryTime';
+import type Employee from './employee';
+import type Partner from './partner';
+import type { RestletRes } from './record';
 
 // YYYY-MM-DD
 type ISODate = string;
@@ -63,8 +64,6 @@ export type SalesOrderRecord = {
 export type SalesOrderItem = {
   item: number;
   quantity: number;
-}
-
-export type SalesOrderRes = {
-  id: string,
 };
+
+export type SalesOrderRes = RestletRes;
