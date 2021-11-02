@@ -22,7 +22,3 @@ export type CustomerRes = {
     phone: string;
   };
 };
-
-export type CustomerSearchRes = {
-  id: string;
-};

@@ -63,4 +63,6 @@ export type SalesOrderRecord = {
   // }[];
 };
 
-export type SalesOrderRes = number;
+export type SalesOrderRes = {
+  id: string,
+};
