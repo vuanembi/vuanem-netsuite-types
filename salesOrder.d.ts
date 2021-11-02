@@ -51,10 +51,7 @@ export type SalesOrderRecord = {
   location: Location.Location;
 
   // * Items
-  item: {
-    item: number;
-    quantity: number;
-  }[];
+  item: SalesOrderItem[];
 
   // * Promotions
   // promotions: {
@@ -62,6 +59,11 @@ export type SalesOrderRecord = {
   //   couponcode: string;
   // }[];
 };
+
+export type SalesOrderItem = {
+  item: number;
+  quantity: number;
+}
 
 export type SalesOrderRes = {
   id: string,
